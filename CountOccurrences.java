@@ -5,17 +5,12 @@ public class CountOccurrences {
 
         int[] numbers = {2, 5, 6, 5, 2, 3};
         int n = numbers.length;
-
         boolean[] counted = new boolean[n];
-
-
         for (int i = 0; i < n; i++) {
             if (counted[i]) {
                 continue;
             }
-
             int count = 1;
-
             for (int j = i + 1; j < n; j++) {
                 if (numbers[i] == numbers[j]) {
                     count++;

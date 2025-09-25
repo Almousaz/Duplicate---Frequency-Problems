@@ -49,11 +49,8 @@ public class FirstNonRepeatingItem {
         }
 
         int[] numbersOfDayForVacation = {20, 30, 40, 50, 20, 30, 40, 50, 80};
-
         int firstDayNonRepeat = -1;
-
         for (int i = 0; i < numbersOfDayForVacation.length; i++) {
-
             boolean isRepeated = false;
             for (int j = 0; j < numbersOfDayForVacation.length; j++) {
                 if (j != i && numbersOfDayForVacation[i] == numbersOfDayForVacation[j]) {

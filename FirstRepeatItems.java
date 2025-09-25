@@ -6,9 +6,7 @@ public class FirstRepeatItems {
 
         int[] numbers = {2, 5, 6, 3, 4, 7, 6};
         int firstRepeat = -1;
-
         for (int i = 0; i < numbers.length; i++) {
-
             for (int j = i + 1; j < numbers.length; j++) {
                 if (numbers[i] == numbers[j]) {
                     firstRepeat = numbers[i];
@@ -18,7 +16,6 @@ public class FirstRepeatItems {
             if (firstRepeat != -1) {
                 break;
             }
-
         }
         if (firstRepeat != -1) {
             System.out.println("first repeating number is : " + firstRepeat);
